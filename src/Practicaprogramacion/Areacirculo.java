@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class Areacirculo {
     public static void main(String[] args) {
 
-        double radio = 0;
-        double resultado = 0;
+      int seguir = 1;
+      int numero = 0;
+      Scanner in = new Scanner(System.in);
 
-        Scanner in = new Scanner(System.in);
-
-        System.out.println("Calcular area del circulo");
-        System.out.println("");
-        System.out.println("");
-
-        System.out.println("Escribe el tamaño del radio");
-        radio = in.nextFloat();
-        resultado = Math.PI * Math.pow(radio, 2);
-
-        System.out.println("El resultado del area es : " + resultado);
-    }
+      while (seguir == 1){
+          System.out.println("Pon numero entero");
+          numero = in.nextInt();
+          System.out.println("Escribiste " + numero);
+          System.out.println("Repetir?");
+          System.out.println("");
+          System.out.println("Teclea 1 para repetir");
+          System.out.println("Teclea 2 para salir");
+          seguir = in.nextInt();
+      }
+}
 }

@@ -12,15 +12,13 @@ public class Circuloconnumeros {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.println("*** CALCULOS CIRCULO***");
+        System.out.println("*** CALCULOS CIRCULO ***");
         System.out.println("");
         System.out.println("1 - Calculo perimetro");
         System.out.println("2 - Calculo area");
         System.out.println("3 - Calculo volumen");
         System.out.println("");
         System.out.println("Por favor indica un numero correspondiente a la operacion que desea hacer");
-
-
         operacion = in.nextInt();
 
 
@@ -34,7 +32,7 @@ public class Circuloconnumeros {
             radio = in.nextFloat();
             resultado = 2 * (Math.PI * radio);
 
-            System.out.println("El resultado del area es : " + resultado + "m");
+            System.out.println("El resultado del perimetro es : " + resultado + "m");
 
         }
 
@@ -63,6 +61,10 @@ public class Circuloconnumeros {
 
             System.out.println("El resultado del volumen es : " + resultado + "³");
 
+        }
+
+        else {
+            System.out.println("Error,por favor escribe un numero del 1 al 3");
         }
     }
 }
