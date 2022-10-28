@@ -10,7 +10,7 @@ public class Pruebaprestamo {
         int precio_vivienda = 0;
         int dinero_pedido = 0;
         int ahorros = 0;
-        int repetir = 0;
+        int repetir = 3;
 
         Scanner in = new Scanner(System.in);
 
@@ -36,15 +36,17 @@ public class Pruebaprestamo {
 
                 else if (trabajo == 2) {
                     System.out.println("Lo sentimos, no podemos concederle el prestamo");
+                    repetir=5;
                 }
 
                 else {
                     System.out.println("Error, ha introducido un numero incorrecto");
-                    System.out.println("Por favor escribe 1 si deseas repetir");
+                    System.out.println("Por favor escribe 3 si deseas repetir");
+                    repetir = in.nextInt();
 
                 }
 
-        repetir = in.nextInt();
+
 
 
     }
