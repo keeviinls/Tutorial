@@ -31,6 +31,7 @@ public class Pruebaprestamo {
                     System.out.println("");
                     System.out.println("¿Cuanto dinero quiere solicitar?");
                     dinero_pedido = in.nextInt();
+                    repetir=8;
                 }
 
 
